@@ -73,8 +73,8 @@ git checkout newbranch
 # after modified
 git add .
 git commit -m "XXX is added..."
-git merge newbranch
 git checkout master
+git merge newbranch
 git branch -d newbranch
 git push
 ```
