@@ -75,11 +75,15 @@ git add .
 git commit -m "XXX is added..."
 git checkout master
 git merge newbranch
-git branch -d newbranch
 git push
+git branch -d newbranch
 ```
 
 ## 参考：
 
 [Git 分支管理](https://www.runoob.com/git/git-branch.html)
 [Git 基本操作](https://www.runoob.com/git/git-basic-operations.html)
+
+如果觉得上述的操作很难受，可以使用Visual Studio Code。其中带有完整的GUI GitHub管理工具，也很简单。请参见[这个链接](https://zhuanlan.zhihu.com/p/31417255)
+
+祝好。
