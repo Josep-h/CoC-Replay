@@ -1,2 +1,85 @@
 # CoC-Replay
 Unity repo for CoC replay
+简单解释一下Git的使用。
+
+## 初始化
+
+首先找到一个文件夹，打开terminal，输入：
+
+```
+git clone https://github.com/Josep-h/CoC-Replay.git
+```
+
+第一次下载需要时间较长，因为Library比较大……后面应该就好了。
+
+## 设置全局GitHub帐号信息
+
+```
+git config --global user.name 'runoob'
+git config --global user.email test@runoob.com
+```
+
+## 开始修改前
+
+在开始修改前请习惯性来一次：
+
+```
+git pull
+```
+
+以保证现在的文件和remote版本一致。
+
+## 分支
+
+分支是为现在的master（或者另一个分支）创建一个副本，对于这个副本的修改会保留在这个副本中，修改结束可以将副本和master合并来保留修改。这个功能可以便于处理需要重要的功能增加或者迭代的时候。
+
+- 如果需要暂时测试一个新功能或者长时间开发一个新内容，请先使用（如果是小幅度修改可以不用 branch ）：`git branch (name)`
+    e.g. : `git branch characters`
+
+- 查看所有分支：`git branch`。
+
+- 切换分支：`git checkout (name)`。
+
+- 合并分支：`git merge (name)`。在合并前请先**commit**。
+
+- 删除分支`git branch -d (branchname)`。
+
+上述结束之后就是一个修改周期。
+
+
+## 提交
+
+需要先将缓存的信息放到代码中。（在 merge 之前也需要）
+
+- 添加修改文件：`git add .`
+- 查看当前修改文件：`git status -s`：这个指令可以看到所有本次修改的文件。如果在文件前标注为AM，则需要再一次使用`git add .`将缓存信息存入。
+- 提交文件：`git commit -m "blabla..."`
+
+最后提交文件（如果有branch，需要先合并branch）
+
+```
+git push
+```
+
+如果出现冲突…嗯，这个好像几句话说不清楚，就先不管它。
+
+
+## 参考修改流程：
+
+```
+git pull
+git branch newbranch
+git checkout newbranch
+# after modified
+git add .
+git commit -m "XXX is added..."
+git merge newbranch
+git checkout master
+git branch -d newbranch
+git push
+```
+
+## 参考：
+
+[Git 分支管理](https://www.runoob.com/git/git-branch.html)
+[Git 基本操作](https://www.runoob.com/git/git-basic-operations.html)
