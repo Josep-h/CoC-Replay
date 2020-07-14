@@ -79,6 +79,18 @@ git push
 git branch -d newbranch
 ```
 
+**简化流程**
+
+这个流程不涉及 branch 操作：
+
+```
+git pull
+# after modified
+git add .
+git commit -m "XXX is added..."
+git push
+```
+
 ## 参考：
 
 [Git 分支管理](https://www.runoob.com/git/git-branch.html)
