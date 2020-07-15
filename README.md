@@ -91,6 +91,8 @@ git commit -m "XXX is added..."
 git push
 ```
 
+为了真正的懒人，写了俩简洁更新脚本。在更新前运行`init.cmd`，修改结束后运行`update.cmd`。效果和上述简化流程相同。
+
 ## 参考：
 
 [Git 分支管理](https://www.runoob.com/git/git-branch.html)
