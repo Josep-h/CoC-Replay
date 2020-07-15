@@ -40,19 +40,16 @@ git pull
 
 - 切换分支：`git checkout (name)`。
 
-- 合并分支：`git merge (name)`。在合并前请先**commit**。
+- 合并（name）分支到当前分支：`git merge (name)`。在合并前请先**commit**。
 
-- 删除分支`git branch -d (branchname)`。
-
-上述结束之后就是一个修改周期。
-
+- 删除分支：`git branch -d (name)`。
 
 ## 提交
 
 需要先将缓存的信息放到代码中。（在 merge 之前也需要）
 
-- 添加修改文件：`git add .`
-- 查看当前修改文件：`git status -s`：这个指令可以看到所有本次修改的文件。如果在文件前标注为AM，则需要再一次使用`git add .`将缓存信息存入。
+- 在git中添加修改文件：`git add .`
+- 查看当前修改文件：`git status -s`：这个指令可以看到所有本次修改的文件。如果在文件前标注为AM（红色标识），则需要再一次使用`git add .`将缓存信息存入。
 - 提交文件：`git commit -m "blabla..."`
 
 最后提交文件（如果有branch，需要先合并branch）
@@ -96,6 +93,7 @@ git push
 ## 参考：
 
 [Git 分支管理](https://www.runoob.com/git/git-branch.html)
+
 [Git 基本操作](https://www.runoob.com/git/git-basic-operations.html)
 
 如果觉得上述的操作很难受，可以使用Visual Studio Code。其中带有完整的GUI GitHub管理工具，也很简单。请参见[这个链接](https://zhuanlan.zhihu.com/p/31417255)
