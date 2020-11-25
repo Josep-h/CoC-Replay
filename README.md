@@ -47,7 +47,7 @@ git config --global user.name 'runoob'
 git config --global user.email test@runoob.com
 ```
 
-## 开始修改前
+### 开始修改前
 
 在开始修改前请习惯性来一次：
 
